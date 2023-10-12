@@ -2,7 +2,7 @@
 import Layout from '~/layouts/Layout.astro';
 import { getHomePermalink } from '~/utils/permalinks';
 
-const title = `Error 404`;
+const title = `Siden blev ikke fundet`;
 ---
 
 <Layout metadata={{ title }}>
@@ -13,11 +13,11 @@ const title = `Error 404`;
           <span class="sr-only">Error</span>
           <span class="text-primary">404</span>
         </h2>
-        <p class="text-3xl font-semibold md:text-3xl">Sorry, we couldn't find this page.</p>
+        <p class="text-3xl font-semibold md:text-3xl">Siden er blevet væk for os :(</p>
         <p class="mt-4 mb-8 text-lg text-muted dark:text-slate-400">
-          But dont worry, you can find plenty of other things on our homepage.
+          Det bedste vi kan gøre lige nu, er at lede dig tilbage til hjemmesiden. Undskyld!
         </p>
-        <a rel="noopener noreferrer" href={getHomePermalink()} class="btn ml-4">Back to homepage</a>
+        <a rel="noopener noreferrer" href={getHomePermalink()} class="btn ml-4">Tilbage til Lenti</a>
       </div>
     </div>
   </section>

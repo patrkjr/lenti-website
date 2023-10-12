@@ -53,7 +53,7 @@ export const headerData = {
         {
           text: 'Privacy policy',
           href: getPermalink('/privacy'),
-        },
+        }
       ],
     },
     {
