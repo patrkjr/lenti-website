@@ -26,33 +26,22 @@ export interface Props {
 const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme = 'light' } = Astro.props;
 ---
 
-<footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>
+<footer
+  class:list={[{ dark: theme === 'dark' }, 'relative border-t border-neutral-200 dark:border-neutral-900 not-prose']}
+>
   <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-neutral-100">
     <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
-      <div class="col-span-12 lg:col-span-4">
+      <div class="col-span-4">
         <div class="mb-2">
           <a class="flex items-center font-bold text-xl" href={getHomePermalink()}>
             <div class="mr-2 pb-0.5">
-              <svg width="38" height="38" viewBox="0 0 170 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="28" height="28" viewBox="0 0 170 180" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M47.1587 135.041C51.5724 160.819 73.8669 180 100.272 180L136.101 180C154.665 180 169.714 164.867 169.714 146.201C169.714 128.497 156.129 113.793 138.571 112.493L73.7585 107.691L66.3792 30.2589C64.7439 13.0997 50.4083 -4.6224e-06 33.2655 -4.6224e-06C14.5695 -4.6224e-06 -0.454657 15.4882 0.0105179 34.282L1.21088 82.7789C1.86708 109.29 21.4479 131.213 47.1587 135.041ZM78.5136 137.511L136.424 141.801C138.715 141.971 140.489 143.89 140.489 146.201C140.489 148.637 138.524 150.612 136.101 150.612H100.272C90.9193 150.612 82.6934 145.356 78.5136 137.511ZM44.0091 103.601C36.0963 99.5971 30.6604 91.4532 30.4276 82.0477L29.2272 33.5509C29.1707 31.2686 30.9952 29.3878 33.2655 29.3878C35.3473 29.3878 37.0881 30.9786 37.2867 33.0623L44.0091 103.601Z"
-                  fill="url(#paint0_linear_252_2458)"></path>
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_252_2458"
-                    x1="84.8571"
-                    y1="180"
-                    x2="84.8571"
-                    y2="-4.52995e-06"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#128F10"></stop>
-                    <stop offset="1" stop-color="#33FC2E"></stop>
-                  </linearGradient>
-                </defs>
+                  fill="#268007"></path>
               </svg>
             </div>
             {SITE?.name}
@@ -86,18 +75,18 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
         </ul> -->
       </div>
       <div class="col-span-6 md:col-span-3 lg:col-span-2">
-        <div class="dark:text-gray-300 font-medium mb-2">Dine data</div>
+        <div class="dark:text-neutral-300 font-medium mb-2">Dine data</div>
         <ul class="text-sm">
           <li class="mb-2">
             <a
-              class="text-muted hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out mr-2 rtl:mr-0 rtl:ml-2"
+              class="text-muted hover:text-neutral-700 dark:text-neutral-400 hover:underline transition duration-150 ease-in-out mr-2 rtl:mr-0 rtl:ml-2"
               href="/privatlivspolitik"
               set:html="Privatlivspolitik"
             />
           </li>
           <li class="mb-2">
             <a
-              class="text-muted hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out mr-2 rtl:mr-0 rtl:ml-2"
+              class="text-muted hover:text-neutral-700 dark:text-neutral-400 hover:underline transition duration-150 ease-in-out mr-2 rtl:mr-0 rtl:ml-2"
               href="/persondatapolitik"
               set:html="Persondatapolitik"
             />
@@ -127,7 +116,7 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
         )
       } -->
 
-      <div class="text-sm mr-4 dark:text-slate-400">
+      <div class="text-sm mr-4 dark:text-neutral-400">
         <p>© Lenti 2023</p>
       </div>
     </div>
